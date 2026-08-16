@@ -1,0 +1,6 @@
+2026-08-16T09:00:00Z INFO api Server started
+2026-08-16T09:01:12Z INFO api Request completed
+2026-08-16T09:02:45Z WARNING api Slow request
+2026-08-16T09:03:18Z ERROR worker Job failed
+2026-08-16T09:04:01Z ERROR worker Job failed
+this line is deliberately malformed
