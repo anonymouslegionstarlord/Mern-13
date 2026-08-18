@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "caseforge-cli"
+version = "1.0.0"
+description = "A zero-dependency manual test-case manager"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+caseforge = "caseforge.cli:main"
+

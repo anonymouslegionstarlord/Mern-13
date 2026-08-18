@@ -1,0 +1,33 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #20242c; background: #f2f4f8; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input, textarea, select { font: inherit; }
+button { cursor: pointer; border: 0; }
+.shell { width: min(1100px, 92%); margin: auto; padding: 48px 0; }
+header span { color: #5158d3; font-size: .75rem; font-weight: 800; letter-spacing: .16em; }
+h1 { font-size: clamp(3.2rem, 9vw, 6.5rem); letter-spacing: -.075em; margin: 4px 0; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 26px 0 14px; }
+.stats div, .defect-form, article { background: white; border: 1px solid #dfe2eb; border-radius: 16px; }
+.stats div { padding: 18px; display: flex; flex-direction: column; }
+.stats strong { font-size: 2rem; }
+.stats small { color: #687083; text-transform: capitalize; }
+.defect-form { padding: 14px; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 9px; }
+input, textarea, select { min-width: 0; padding: 11px; border: 1px solid #ccd1dd; border-radius: 9px; background: white; }
+textarea { min-height: 82px; resize: vertical; }
+.defect-form button { background: #343aaf; color: white; border-radius: 9px; }
+.toolbar { display: flex; gap: 10px; justify-content: flex-end; padding: 18px 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }
+article { padding: 20px; }
+article h2 { margin: 12px 0; }
+.meta, .actions { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.meta { color: #687083; font-size: .82rem; }
+.severity { padding: 5px 9px; border-radius: 99px; font-weight: 800; }
+.low { color: #26714e; background: #def3e8; } .medium { color: #755a10; background: #fff1c2; }
+.high { color: #a04a13; background: #ffe4d1; } .critical { color: #a12828; background: #f8d6d6; }
+details { color: #50586a; margin-bottom: 18px; }
+summary { cursor: pointer; font-weight: 700; }
+.actions select { flex: 1; }
+.actions button { color: #a12828; background: #f8dddd; padding: 10px; border-radius: 9px; }
+.error { color: #8f2424; background: #f8dada; padding: 12px; border-radius: 9px; }
+@media (max-width: 760px) { .stats { grid-template-columns: 1fr 1fr; } .defect-form { grid-template-columns: 1fr; } }
+
