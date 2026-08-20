@@ -1,0 +1,10 @@
+{
+  "fastapi": ["fast api"],
+  "manual testing": ["manual qa"],
+  "mongodb": ["mongo db"],
+  "python": ["python3"],
+  "react": ["react.js", "reactjs"],
+  "rest api": ["restful api", "rest apis"],
+  "sql": ["structured query language"]
+}
+

@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jdmatch-cli"
+version = "1.0.0"
+description = "A transparent resume and job-description skill gap analyser"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+jdmatch = "jdmatch.cli:main"
+
+[tool.setuptools.package-data]
+jdmatch = ["default_skills.json"]
+

@@ -1,0 +1,23 @@
+{
+  "agile": ["scrum"],
+  "automation testing": ["test automation", "automated testing"],
+  "ccna": ["cisco certified network associate"],
+  "css": ["css3"],
+  "express": ["express.js", "expressjs"],
+  "fastapi": ["fast api"],
+  "git": ["github", "version control"],
+  "html": ["html5"],
+  "javascript": ["js", "ecmascript"],
+  "jira": ["atlassian jira"],
+  "manual testing": ["manual qa"],
+  "mongodb": ["mongo db"],
+  "node.js": ["nodejs", "node js"],
+  "python": ["python3"],
+  "react": ["react.js", "reactjs"],
+  "regression testing": ["regression qa"],
+  "rest api": ["restful api", "rest apis"],
+  "sql": ["structured query language"],
+  "test cases": ["test case design", "test case execution"],
+  "typescript": ["ts"]
+}
+
