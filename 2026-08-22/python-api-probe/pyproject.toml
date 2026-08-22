@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apiprobe-cli"
+version = "1.0.0"
+description = "A zero-dependency API smoke-testing CLI"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+apiprobe = "apiprobe.cli:main"
+

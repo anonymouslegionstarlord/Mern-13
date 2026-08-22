@@ -1,0 +1,11 @@
+[
+  {
+    "name": "JSONPlaceholder health example",
+    "url": "https://jsonplaceholder.typicode.com/posts/1",
+    "method": "GET",
+    "expected_status": 200,
+    "contains": "userId",
+    "timeout": 5
+  }
+]
+
