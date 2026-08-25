@@ -10,6 +10,7 @@ STATUSES = ("Not Run", "Passed", "Failed", "Blocked")
 
 @dataclass(slots=True)
 class TestCase:
+    __test__ = False
     id: int
     title: str
     steps: list[str]
@@ -50,4 +51,3 @@ class TestCase:
         case = cls(**data)
         case.validate()
         return case
-
