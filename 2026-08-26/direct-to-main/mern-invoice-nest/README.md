@@ -12,7 +12,7 @@ InvoiceNest is a small MERN application for freelancers and small teams to track
 
 ## Stack
 
-React 19, Vite, Express 5, Node.js, MongoDB, and Mongoose.
+React 18, Vite, Express 4, Node.js, MongoDB, and Mongoose.
 
 ## First-time setup
 
