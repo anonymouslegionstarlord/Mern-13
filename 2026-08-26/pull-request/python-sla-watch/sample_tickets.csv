@@ -1,0 +1,4 @@
+ticket_id,opened_at,priority,status,resolved_at
+INC-101,2026-08-26T00:00:00Z,P1,resolved,2026-08-26T02:30:00Z
+INC-102,2026-08-26T01:00:00Z,P2,open,
+INC-103,2026-08-25T04:00:00Z,P3,resolved,2026-08-26T00:00:00Z
