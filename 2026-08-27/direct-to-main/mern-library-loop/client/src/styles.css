@@ -1,0 +1,24 @@
+:root { font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #25231e; background: #f6f3eb; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+.shell { width: min(1180px, calc(100% - 32px)); margin: 32px auto 70px; }
+.hero { padding: 36px; border-radius: 25px; color: #fff9e8; background: linear-gradient(135deg, #292b23, #526044); display: flex; align-items: center; justify-content: space-between; box-shadow: 0 20px 50px #343a2924; }
+.hero h1 { margin: 4px 0; font-size: clamp(2.5rem, 7vw, 4.5rem); letter-spacing: -.06em; }.hero p { margin: 0; color: #e4e8d7; }
+.eyebrow { color: #e7b85a; font-size: .72rem; font-weight: 800; letter-spacing: .17em; text-transform: uppercase; }
+.bookMark { display: flex; align-items: end; gap: 7px; height: 82px; padding: 14px; border: 1px solid #ffffff35; border-radius: 18px; }.bookMark span { display: block; width: 18px; height: 53px; background: #e9ba59; border-radius: 3px; transform: rotate(-4deg); }.bookMark span:nth-child(2) { height: 45px; background: #88a270; transform: none; }.bookMark span:nth-child(3) { height: 58px; background: #d7795e; transform: rotate(5deg); }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 13px; margin: 18px 0; }.stats article, .panel { background: #fff; border: 1px solid #e2ddd2; border-radius: 18px; box-shadow: 0 8px 27px #3532260b; }.stats article { display: grid; gap: 7px; padding: 19px; }.stats span { color: #7a756b; font-size: .82rem; }.stats strong { font-size: 1.55rem; }
+.layout { display: grid; grid-template-columns: minmax(310px, .75fr) minmax(460px, 1.35fr); gap: 18px; align-items: start; }.panel { padding: 24px; }.panel h2 { margin: 4px 0 20px; }
+.form label { display: grid; gap: 7px; margin-bottom: 14px; color: #5d594f; font-size: .84rem; font-weight: 700; }.twoCol { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+input, select { width: 100%; border: 1px solid #d0cabe; border-radius: 10px; padding: 11px 12px; color: #2b2923; background: white; outline: none; }input:focus, select:focus { border-color: #6f815b; box-shadow: 0 0 0 3px #6f815b1c; }
+.primary { width: 100%; padding: 12px 16px; border: 0; border-radius: 11px; color: white; background: #596b48; font-weight: 800; }.primary:disabled { opacity: .6; cursor: wait; }
+.sectionTitle { display: flex; justify-content: space-between; align-items: start; }.sectionTitle strong { padding: 7px 11px; border-radius: 999px; color: #5d6e49; background: #eff2e8; }.filters { display: grid; grid-template-columns: 1.6fr 1fr; gap: 9px; margin-bottom: 16px; }
+.loanList { display: grid; gap: 11px; }.loan { padding: 16px; border: 1px solid #e3ded4; border-left: 4px solid #83916f; border-radius: 13px; }.loan.overdue { border-left-color: #c55744; }.loan.returned { border-left-color: #a8aaa4; opacity: .82; }
+.loanTop, .dates, .actions { display: flex; align-items: center; justify-content: space-between; gap: 10px; }.loanTop > div { display: grid; gap: 4px; }.loanTop span, .dates { color: #7b766d; font-size: .82rem; }.dates { justify-content: flex-start; gap: 18px; margin: 12px 0; }
+.badge { padding: 5px 9px; border-radius: 999px; background: #edf1e8; color: #596847 !important; font-size: .7rem !important; font-weight: 800; text-transform: capitalize; }.badge.overdue { background: #fff0ed; color: #a43d2e !important; }.badge.returned { background: #efefed; color: #656762 !important; }
+.actions { justify-content: flex-end; }.actions button { padding: 7px 10px; border: 1px solid #d4cec3; border-radius: 8px; background: white; color: #5d594f; }.actions .return { color: white; background: #60744d; border-color: #60744d; }.actions .delete { color: #a34435; border-color: #efc9c2; }
+.alert { margin-bottom: 16px; padding: 12px 15px; border: 1px solid #efc9c2; border-radius: 11px; color: #92392c; background: #fff0ed; }.empty { padding: 34px 8px; color: #7a756b; text-align: center; }
+@media (max-width: 850px) { .stats { grid-template-columns: 1fr 1fr; }.layout { grid-template-columns: 1fr; }.bookMark { display: none; } }
+@media (max-width: 540px) { .shell { width: min(100% - 20px, 1180px); margin-top: 10px; }.hero, .panel { padding: 20px; border-radius: 16px; }.stats, .twoCol, .filters { grid-template-columns: 1fr; }.loanTop { align-items: flex-start; } }
+

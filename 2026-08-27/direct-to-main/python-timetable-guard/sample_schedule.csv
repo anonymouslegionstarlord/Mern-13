@@ -1,0 +1,5 @@
+session_id,day,start_time,end_time,room,instructor,group
+CS101-MON,Monday,09:00,10:00,Lab-1,Asha Sharma,MCA-A
+DB201-MON,Monday,10:15,11:15,Lab-1,Ravi Mehta,MCA-A
+NET110-TUE,Tuesday,09:30,10:30,Room-3,Asha Sharma,MCA-B
+
