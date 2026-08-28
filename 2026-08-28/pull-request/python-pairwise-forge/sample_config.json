@@ -1,0 +1,13 @@
+{
+  "parameters": {
+    "browser": ["Chrome", "Firefox", "Safari"],
+    "os": ["Windows", "Linux", "macOS"],
+    "account": ["free", "team"],
+    "locale": ["en-IN", "hi-IN"]
+  },
+  "exclude": [
+    { "browser": "Safari", "os": "Linux" },
+    { "os": "macOS", "account": "free" }
+  ]
+}
+
