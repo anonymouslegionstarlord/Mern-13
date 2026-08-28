@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "table-diff"
+version = "1.0.0"
+description = "Compare CSV dataset versions by key"
+requires-python = ">=3.11"
+
+[project.scripts]
+tablediff = "tablediff.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["tablediff*"]
+
