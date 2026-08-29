@@ -1,0 +1,7 @@
+feat(auth): add refresh-token rotation
+fix(api): return a clear error for expired sessions
+perf(search): cache normalized query tokens
+docs: document first-time deployment
+feat(billing)!: require idempotency keys for charges
+test(api): cover invalid pagination values
+
