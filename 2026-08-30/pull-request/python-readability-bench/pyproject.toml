@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "readability-bench"
+version = "1.0.0"
+description = "Dependency-free readability analysis for English prose"
+requires-python = ">=3.11"
+
+[project.scripts]
+readabilitybench = "readabilitybench.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["readabilitybench*"]
+
