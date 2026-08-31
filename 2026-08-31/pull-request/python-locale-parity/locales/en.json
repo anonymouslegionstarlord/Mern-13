@@ -1,0 +1,12 @@
+{
+  "app": {
+    "title": "Project dashboard",
+    "welcome": "Welcome, {name}",
+    "items": "%(count)d items"
+  },
+  "actions": {
+    "save": "Save",
+    "cancel": "Cancel"
+  }
+}
+
