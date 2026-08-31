@@ -1,0 +1,25 @@
+{
+  "patterns": [
+    {
+      "name": "team-alias",
+      "pattern": "[a-z][a-z0-9_-]{2,29}",
+      "mode": "fullmatch",
+      "flags": ["IGNORECASE"],
+      "cases": [
+        { "label": "simple alias", "value": "green-team-4", "should_match": true },
+        { "label": "too short", "value": "ab", "should_match": false },
+        { "label": "spaces rejected", "value": "green team", "should_match": false }
+      ]
+    },
+    {
+      "name": "ticket reference",
+      "pattern": "QA-[0-9]{4}",
+      "mode": "search",
+      "cases": [
+        { "label": "embedded reference", "value": "Resolved QA-2048 today", "should_match": true },
+        { "label": "missing digits", "value": "QA-20", "should_match": false }
+      ]
+    }
+  ]
+}
+
