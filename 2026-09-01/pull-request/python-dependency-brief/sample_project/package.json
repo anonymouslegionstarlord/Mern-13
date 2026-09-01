@@ -1,0 +1,10 @@
+{
+  "name": "sample-dashboard",
+  "private": true,
+  "dependencies": {
+    "react": "18.3.1"
+  },
+  "devDependencies": {
+    "vite": "^6.0.1"
+  }
+}
