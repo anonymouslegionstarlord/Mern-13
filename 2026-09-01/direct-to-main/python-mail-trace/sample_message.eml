@@ -1,0 +1,10 @@
+From: Release Bot <releases@example.com>
+To: Engineering Team <engineering@example.net>
+Return-Path: <bounce@example.com>
+Date: Mon, 31 Aug 2026 09:15:00 +0000
+Subject: Release candidate is ready
+Message-ID: <release-2026-09-01@example.com>
+Received: from relay.example.com by mx.example.net
+Authentication-Results: mx.example.net; spf=pass; dkim=pass; dmarc=pass
+
+This sample body is intentionally ignored by MailTrace.
