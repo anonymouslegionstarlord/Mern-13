@@ -1,0 +1,48 @@
+:root { color: #ecebf0; background: #101116; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: radial-gradient(circle at 12% 0, #332346 0, transparent 34%), #101116; }
+button, input, select, textarea { font: inherit; }
+main { width: min(1320px, calc(100% - 32px)); margin: auto; padding: 44px 0 64px; }
+.hero { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; padding-bottom: 32px; }
+.hero h1 { margin: 4px 0 10px; color: #fff7df; font: 500 clamp(3rem, 8vw, 6rem)/.9 Georgia, serif; }
+.hero p:not(.eyebrow) { color: #b9b6c2; }
+.monogram { display: grid; place-items: center; width: 86px; height: 86px; border: 1px solid #d6a8ff; border-radius: 50%; color: #d6a8ff; font: 1.7rem Georgia, serif; }
+.eyebrow { margin: 0; color: #e0bb75; text-transform: uppercase; letter-spacing: .18em; font-size: .72rem; font-weight: 800; }
+.metrics { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 20px; }
+.metrics article, .panel { border: 1px solid #30323b; background: rgba(25, 26, 32, .96); }
+.metrics article { padding: 17px; border-radius: 13px; }
+.metrics strong { display: block; color: #fff7df; font: 500 2rem Georgia, serif; }
+.metrics span { color: #999aa5; font-size: .8rem; }
+.workspace { display: grid; grid-template-columns: minmax(300px, 380px) 1fr; align-items: start; gap: 18px; }
+.panel { padding: 22px; border-radius: 18px; box-shadow: 0 24px 70px #0003; }
+.form { position: sticky; top: 18px; display: grid; gap: 12px; }
+.heading h2 { margin: 4px 0 15px; color: #fff7df; font: 500 1.6rem Georgia, serif; }
+label { display: grid; gap: 6px; color: #c6c4cb; font-size: .78rem; }
+input, select, textarea { width: 100%; padding: 10px 11px; border: 1px solid #3c3e48; border-radius: 9px; background: #111218; color: #f4f2e9; }
+textarea { min-height: 76px; resize: vertical; }
+input:focus, select:focus, textarea:focus { outline: 2px solid #a96ed5; border-color: transparent; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+button { padding: 11px 16px; border: 0; border-radius: 9px; cursor: pointer; background: #d5a6ff; color: #1b1023; font-weight: 800; }
+button:disabled { cursor: wait; opacity: .65; }
+.filters { display: grid; grid-template-columns: 1fr 145px 145px; gap: 9px; margin-bottom: 16px; }
+.cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.card { padding: 17px; border: 1px solid #343640; border-radius: 13px; background: #14151b; }
+.card-top, .actions { display: flex; align-items: center; justify-content: space-between; gap: 9px; }
+.card code { color: #999ca6; font-size: .72rem; }
+.card h3 { margin: 14px 0 6px; color: #fff7df; font: 500 1.3rem Georgia, serif; }
+.card p { color: #aaa9b3; font-size: .87rem; line-height: 1.5; }
+.card .meta { color: #d0a8ef; text-transform: capitalize; font-size: .76rem; }
+.badge { padding: 5px 8px; border-radius: 99px; background: #3c3545; font-size: .65rem; text-transform: uppercase; letter-spacing: .08em; }
+.badge.open { background: #184d3c; color: #a0e1bd; }
+.badge.installing { background: #59431d; color: #f1ce82; }
+.badge.closed { background: #373942; color: #b8bac4; }
+dl { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; margin: 13px 0; }
+dl div { padding: 8px; border-radius: 8px; background: #1d1f27; }
+dt { color: #7f818c; text-transform: uppercase; font-size: .6rem; }
+dd { margin: 3px 0 0; color: #dddbe1; font-size: .73rem; }
+.actions select { flex: 1; width: auto; }
+.danger { border: 1px solid #71343d; background: transparent; color: #ff9ea6; }
+.error { padding: 12px 15px; border: 1px solid #803945; border-radius: 10px; background: #3a1c23; color: #ffb3ba; }
+.empty { padding: 42px 12px; color: #9899a4; text-align: center; }
+@media (max-width: 920px) { .metrics { grid-template-columns: repeat(3, 1fr); } .workspace { grid-template-columns: 1fr; } .form { position: static; } }
+@media (max-width: 620px) { main { width: calc(100% - 20px); padding-top: 20px; } .monogram { display: none; } .metrics, .cards, .pair, .filters { grid-template-columns: 1fr; } }
