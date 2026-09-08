@@ -1,0 +1,4 @@
+# One URL per line. Comments and blank lines are ignored.
+https://Example.COM:443/docs?id=7
+http://example.com/news?utm_source=demo&article=42#comments
+

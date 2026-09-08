@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "url-tidy"
+version = "1.0.0"
+description = "Offline URL privacy auditor and cautious normalizer"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+urltidy = "urltidy.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
