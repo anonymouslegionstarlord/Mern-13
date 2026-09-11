@@ -1,0 +1,2 @@
+"""SnippetShelf FastAPI package."""
+

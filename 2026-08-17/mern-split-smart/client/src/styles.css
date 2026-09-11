@@ -1,0 +1,31 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #1d2527; background: #edf2ef; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input, select { font: inherit; }
+button { cursor: pointer; border: 0; }
+.shell { width: min(1100px, 92%); margin: auto; padding: 52px 0; }
+header span, .tag { color: #156d5b; font-weight: 800; letter-spacing: .13em; font-size: .75rem; }
+h1 { margin: 4px 0; font-size: clamp(3rem, 8vw, 6.3rem); letter-spacing: -.07em; }
+.overview { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 28px 0 16px; }
+.overview div, .expense-form, article, aside { background: #fff; border: 1px solid #d1dcda; border-radius: 18px; }
+.overview div { padding: 18px; display: flex; flex-direction: column; }
+.overview strong { font-size: 1.8rem; }
+small, .hint, article p { color: #637170; }
+.expense-form { padding: 14px; display: grid; grid-template-columns: 1.4fr .7fr 1fr 1.5fr 1fr auto; gap: 8px; }
+input, select { min-width: 0; padding: 11px; border: 1px solid #c7d1cf; border-radius: 10px; background: white; }
+button { padding: 11px 14px; border-radius: 10px; background: #173e37; color: white; }
+.filters { display: flex; gap: 8px; overflow-x: auto; padding: 18px 0; }
+.filters button { color: #43514f; background: transparent; border: 1px solid #bcc9c7; white-space: nowrap; }
+.filters .active { color: white; background: #156d5b; border-color: #156d5b; }
+.layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr); gap: 18px; }
+article { display: flex; align-items: center; justify-content: space-between; padding: 20px; margin-bottom: 10px; gap: 16px; }
+article h2 { margin: 7px 0 2px; }
+.amount { display: flex; align-items: flex-end; flex-direction: column; gap: 10px; }
+.amount button { color: #a33b31; background: #f8e5e2; padding: 7px 10px; }
+aside { align-self: start; padding: 22px; margin-top: 18px; }
+.balance { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #e2e8e6; }
+.positive { color: #14725b; } .negative { color: #a23c32; }
+.error { color: #8c2d24; background: #f8dfdb; padding: 12px; border-radius: 10px; }
+@media (max-width: 850px) { .expense-form { grid-template-columns: 1fr 1fr; } .layout { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .overview, .expense-form { grid-template-columns: 1fr; } article { align-items: flex-start; } }
+
