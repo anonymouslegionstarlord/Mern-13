@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "integritymap-cli"
+version = "1.0.0"
+description = "A zero-dependency SHA-256 directory integrity checker"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+integritymap = "integritymap.cli:main"
+
