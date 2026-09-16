@@ -1,0 +1,5 @@
+rule_id,action,protocol,source,destination,source_port,destination_port,enabled
+MGMT-SSH,allow,tcp,10.20.0.0/24,10.50.0.10/32,any,22,true
+DNS-CLIENTS,allow,udp,any,10.50.0.53/32,any,53,true
+LEGACY-RDP,allow,tcp,10.30.0.0/24,10.50.0.20/32,any,3389,false
+DEFAULT-DENY,deny,any,any,any,any,any,true
