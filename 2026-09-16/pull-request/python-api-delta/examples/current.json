@@ -1,0 +1,31 @@
+{
+  "openapi": "3.0.3",
+  "info": {"title": "Team Directory", "version": "1.1.0"},
+  "paths": {
+    "/users": {
+      "get": {
+        "operationId": "listUsers",
+        "parameters": [
+          {"name": "limit", "in": "query", "required": false, "schema": {"type": "integer"}}
+        ],
+        "responses": {
+          "200": {
+            "description": "User list",
+            "content": {
+              "application/json": {
+                "schema": {"type": "array"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "operationId": "getHealth",
+        "responses": {"204": {"description": "Healthy"}}
+      }
+    }
+  }
+}
+
