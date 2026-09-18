@@ -1,0 +1,5 @@
+# Safe demo headers. Values are intentionally non-sensitive.
+Set-Cookie: session=demo; Secure; HttpOnly; SameSite=Lax; Path=/
+preferences=compact; Secure; SameSite=Strict; Path=/settings
+analytics=demo; Secure; HttpOnly; SameSite=Lax; Max-Age=3600
+

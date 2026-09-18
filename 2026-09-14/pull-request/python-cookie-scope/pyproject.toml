@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cookie-scope"
+version = "1.0.0"
+description = "Offline Set-Cookie security linter with privacy-safe reports"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+cookiescope = "cookiescope.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
