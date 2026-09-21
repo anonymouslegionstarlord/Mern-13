@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="checkout" tests="3">
+  <testcase classname="cart.CartTests" name="test_add_item" time="0.12" />
+  <testcase classname="cart.CartTests" name="test_apply_coupon" time="1.84">
+    <failure message="expected discount">AssertionError</failure>
+  </testcase>
+  <testcase classname="cart.CartTests" name="test_legacy_offer" time="0.01">
+    <skipped message="feature retired" />
+  </testcase>
+</testsuite>
+

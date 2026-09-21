@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="checkout" tests="2">
+  <testcase classname="cart.CartTests" name="test_add_item" time="0.09" />
+  <testcase classname="cart.CartTests" name="test_apply_coupon" time="0.44" />
+</testsuite>
+
