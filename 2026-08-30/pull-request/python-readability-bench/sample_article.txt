@@ -1,0 +1,4 @@
+Clear software documentation helps a reader complete a task without guessing. Start with the outcome, name each requirement, and keep the setup steps in the order they must be performed.
+
+Short examples make an unfamiliar idea easier to test. Error messages should explain what failed and what the reader can do next. A final verification step gives the reader confidence that the system is working.
+
