@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "subnetsmith-cli"
+version = "1.0.0"
+description = "A zero-dependency IPv4 and IPv6 subnet planning CLI"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+subnetsmith = "subnetsmith.cli:main"
+
