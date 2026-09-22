@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sla-watch"
+version = "1.0.0"
+description = "Audit support-ticket CSV files against SLA targets"
+requires-python = ">=3.11"
+
+[project.scripts]
+slawatch = "slawatch.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["slawatch*"]
+
