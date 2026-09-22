@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "data-peek-api"
+version = "1.0.0"
+description = "A FastAPI CSV data-quality profiler"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["fastapi==0.116.1", "uvicorn[standard]==0.35.0", "python-multipart==0.0.20"]
+
